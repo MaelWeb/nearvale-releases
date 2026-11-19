@@ -22,6 +22,12 @@
 </header>
 <main id="main">
 <article class="prose">
+<div id="payment-failed" hidden>
+<h1>Your payment didn't complete</h1>
+<p>No license key was issued for this attempt. You can <a href="index.html#pricing">try again</a>. If you were charged anyway, email <a href="mailto:support@nearvale.app">support@nearvale.app</a> and we will sort it out.</p>
+</div>
+<p id="payment-pending" class="updated" hidden>We are still confirming your payment. Your license key will arrive by email as soon as it completes, usually within a few minutes.</p>
+<div id="thanks-success">
 <h1>Thank you for buying Nearvale</h1>
 <p>Your license key is on its way to your email inbox.</p>
 
@@ -39,6 +45,7 @@
 </ol>
 <p>Moving to another Mac later? Click <strong>Deactivate This Mac</strong> first. You can use up to 3 Macs at the same time.</p>
 <p>Questions? Email <a href="mailto:support@nearvale.app">support@nearvale.app</a>.</p>
+</div>
 </article>
 <script src="assets/thanks.js"></script>
 

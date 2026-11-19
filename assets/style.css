@@ -126,7 +126,7 @@ a:focus-visible, .btn:focus-visible { outline: 3px solid var(--brand-end); outli
 
 /* 感谢页 */
 .key-box { display: flex; gap: var(--space-sm); align-items: stretch; margin: var(--space-md) 0; }
-.key-box code { flex: 1; font-size: 16px; padding: var(--space-md); border: 1px dashed var(--brand); border-radius: var(--radius-sm); background: var(--surface-alt); word-break: break-all; }
+.key-box code { flex: 1; font-size: 16px; padding: var(--space-md); border: 1px dashed var(--brand); border-radius: var(--radius-sm); background: var(--surface-alt); word-break: break-all; white-space: pre-line; }
 .key-box button { font: inherit; font-weight: 600; padding: 0 var(--space-lg); border-radius: var(--radius-sm); border: 1px solid var(--brand); background: var(--brand-start); color: #fff; cursor: pointer; }
 [hidden] { display: none !important; }
 
