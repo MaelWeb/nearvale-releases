@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- 纯静态站：只允许加载本站资源，禁止内联脚本；感谢页的脚本放在 assets/thanks.js -->
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self'; script-src 'self'; base-uri 'none'; form-action 'none'">
+<meta name="referrer" content="no-referrer">
+<title>Nearvale — Walk away, your Mac locks itself</title>
+<meta name="description" content="Nearvale locks your Mac when your Apple Watch moves away and wakes it when you come back. A small menu-bar app for macOS 14+.">
+<link rel="icon" type="image/png" href="assets/icon.png">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="site-header__inner">
+    <a class="brand" href="index.html"><img src="assets/icon.png" alt="" width="28" height="28"><span>Nearvale</span></a>
+    <nav class="nav" aria-label="Main"><a href="index.html#features">Features</a><a href="index.html#pricing">Pricing</a><a href="help.html">Help</a><a class="nav__cta" href="https://github.com/MaelWeb/nearvale-releases/releases/latest">Download</a><a class="nav__lang" href="zh/index.html" hreflang="zh-Hans">中文</a></nav>
+  </div>
+</header>
+<main id="main">
+<section class="section hero">
+  <img class="hero__icon" src="assets/icon.png" alt="Nearvale app icon" width="128" height="128">
+  <h1>Walk away. Your Mac locks itself.</h1>
+  <p class="hero__lead">Nearvale measures the Bluetooth distance between your Apple Watch and your Mac. Leave your desk and the screen locks; come back and it wakes up, ready for “Unlock with Apple Watch”.</p>
+  <div class="actions">
+    <a class="btn btn--primary" href="https://github.com/MaelWeb/nearvale-releases/releases/latest">Download the free trial</a>
+    <a class="btn btn--secondary" href="#pricing">Buy for $9.99</a>
+  </div>
+  <p class="hero__meta">macOS 14 or later · Lives in the menu bar · No network by default · Never touches your password</p>
+</section>
+
+<section class="section section--alt" id="features">
+  <div class="section__inner">
+    <h2>It does the thing you always forget</h2>
+    <p class="section__lead">No shortcut to press, nothing to remember. The watch on your wrist is your key.</p>
+    <div class="grid">
+      <div class="card"><span class="card__icon" aria-hidden="true">🔒</span><h3>Locks when you leave</h3><p>When your watch moves past the distance you set and stays there for a few seconds, the screen locks.</p></div>
+      <div class="card"><span class="card__icon" aria-hidden="true">💡</span><h3>Wakes when you return</h3><p>Back in range, the display lights up. macOS's own “Unlock with Apple Watch” takes it from there.</p></div>
+      <div class="card"><span class="card__icon" aria-hidden="true">🎯</span><h3>Calibrates to your desk</h3><p>Sit as you normally do for ten seconds and Nearvale sets thresholds for your room, your Mac and your watch.</p></div>
+      <div class="card"><span class="card__icon" aria-hidden="true">🔁</span><h3>Learns from false locks</h3><p>Mark a lock as a mistake and Nearvale adjusts, so it fits your habits better over time.</p></div>
+      <div class="card"><span class="card__icon" aria-hidden="true">📍</span><h3>Trusted places</h3><p>Pause automatic locking at home or in the office — by network, or by a location you pick on a map.</p></div>
+      <div class="card"><span class="card__icon" aria-hidden="true">🎥</span><h3>Meeting-aware</h3><p>Optionally hold off while an app keeps the display awake for a presentation, with a hard upper limit.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <h2>Set up in a minute</h2>
+  <ol class="steps">
+    <li><strong>Install and open Nearvale</strong>It appears in the menu bar and walks you through Bluetooth permission.</li>
+    <li><strong>Pair your Apple Watch</strong>Pick your watch in Settings. Nothing to install on the watch.</li>
+    <li><strong>Turn on “Unlock with Apple Watch”</strong>In macOS System Settings, so coming back unlocks as well as wakes.</li>
+  </ol>
+</section>
+
+<section class="section section--alt" id="privacy">
+  <div class="section__inner">
+    <h2>We know nothing about you</h2>
+    <p class="section__lead">For a tool that sits next to your work all day, privacy comes first.</p>
+    <ul class="checks">
+      <li>Everything is computed on your Mac. The trial makes no network requests at all.</li>
+      <li>After you buy, the app contacts Dodo Payments only to activate, to re-check your key about every 7 days, and to deactivate — sending the key and a random device label, never your computer name.</li>
+      <li>No analytics, no tracking, no crash reporting. Your password is never stored or sent.</li>
+      <li>Location is optional and only compared on your Mac.</li>
+    </ul>
+    <p><a href="privacy.html">Read the privacy policy</a></p>
+  </div>
+</section>
+
+<section class="section" id="pricing">
+  <h2 class="section__title--center">Pay once. Use it for good.</h2>
+  <div class="price-card">
+    <span class="price-card__badge">Early-bird price</span>
+    <p class="price-card__amount">$9.99<s class="price-card__was">$14.99</s></p>
+    <p class="price-card__note">One-time purchase · USD · taxes calculated at checkout</p>
+    <ul class="checks">
+      <li>14-day free trial with every feature</li>
+      <li>Use on up to 3 Macs at a time; move it with “Deactivate This Mac”</li>
+      <li>All future updates included</li>
+      <li>Full refund within 14 days, no questions asked</li>
+    </ul>
+    <span class="btn btn--disabled" aria-disabled="true">Purchase opens soon</span>
+    <p class="price-card__fine">Your license key arrives by email. Open Nearvale → Settings → License, paste it and click Activate. By buying you agree to the <a href="terms.html">License Agreement</a> and the <a href="refund.html">refund policy</a>.</p>
+  </div>
+</section>
+
+<section class="section section--alt">
+  <div class="section__inner">
+    <h2>Questions</h2>
+    <dl class="faq">
+      <dt>What do I need?</dt>
+      <dd>A Mac with Bluetooth running macOS 14 Sonoma or later, and an Apple Watch. For hands-free unlocking, turn on “Unlock with Apple Watch” in System Settings.</dd>
+      <dt>Do I need an app on my watch?</dt>
+      <dd>No. Nearvale reads the Bluetooth signal your watch already sends.</dd>
+      <dt>Is this a security product?</dt>
+      <dd>No — it is a convenience tool. Bluetooth can be blocked or lost, so keep a strong password and FileVault on, and lock manually when it matters.</dd>
+      <dt>What happens when the trial ends?</dt>
+      <dd>Automatic locking stops and the app tells you so clearly. Your settings are kept; enter a license key and everything resumes.</dd>
+      <dt>Can I move to a new Mac?</dt>
+      <dd>Yes. Choose “Deactivate This Mac” in Settings → License, then activate on the new one. You can use up to 3 Macs at the same time.</dd>
+      <dt>How do I get help?</dt>
+      <dd>Read the <a href="help.html">help guide</a>, email <a href="mailto:support@nearvale.app">support@nearvale.app</a>, or open an issue on <a href="https://github.com/MaelWeb/nearvale-releases/issues">GitHub</a>.</dd>
+    </dl>
+  </div>
+</section>
+
+</main>
+<footer class="site-footer">
+  <div class="site-footer__inner">
+    <nav class="site-footer__links" aria-label="Legal"><a href="terms.html">License Agreement</a><a href="privacy.html">Privacy</a><a href="refund.html">Refunds</a><a href="mailto:support@nearvale.app">Contact</a></nav>
+    <p>Payments are processed by Dodo Payments, our merchant of record.</p>
+    <p>Apple, Mac and Apple Watch are trademarks of Apple Inc. Nearvale is not affiliated with Apple.</p>
+    <p>© 2026 Nearvale</p>
+  </div>
+</footer>
+</body>
+</html>

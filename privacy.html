@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- 纯静态站：只允许加载本站资源，禁止内联脚本；感谢页的脚本放在 assets/thanks.js -->
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self'; script-src 'self'; base-uri 'none'; form-action 'none'">
+<meta name="referrer" content="no-referrer">
+<title>Privacy Policy · Nearvale</title>
+<meta name="description" content="What Nearvale does with your data: almost nothing leaves your Mac.">
+<link rel="icon" type="image/png" href="assets/icon.png">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="site-header__inner">
+    <a class="brand" href="index.html"><img src="assets/icon.png" alt="" width="28" height="28"><span>Nearvale</span></a>
+    <nav class="nav" aria-label="Main"><a href="index.html#features">Features</a><a href="index.html#pricing">Pricing</a><a href="help.html">Help</a><a class="nav__cta" href="https://github.com/MaelWeb/nearvale-releases/releases/latest">Download</a><a class="nav__lang" href="zh/privacy.html" hreflang="zh-Hans">中文</a></nav>
+  </div>
+</header>
+<main id="main">
+<article class="prose">
+<h1>Privacy Policy</h1>
+<p class="updated">Last updated: 2026-11-19</p>
+
+<p>Nearvale is a macOS menu-bar app that locks your Mac when your Apple Watch moves away. It is built to work without knowing anything about you. This policy explains the few cases where data leaves your Mac, and what happens when you buy a license or visit this website. "We" means the developer of Nearvale identified in the <a href="terms.html">License Agreement</a>.</p>
+
+<h2>Summary</h2>
+<ul>
+  <li>Proximity detection, locking and all settings stay on your Mac.</li>
+  <li>The free trial makes no network requests.</li>
+  <li>After you buy, the app talks to Dodo Payments only to activate, re-check and deactivate your license, sending the license key and a random device label.</li>
+  <li>No analytics, no tracking, no advertising, no crash reporting. We never receive your password.</li>
+</ul>
+
+<h2>Data that stays on your Mac</h2>
+<ul>
+  <li><strong>Bluetooth signal readings</strong> from your watch (and any backup devices you choose), used to decide whether you are near. They are processed in memory; only the signal strength at the moment of each lock is kept, in the lock history.</li>
+  <li><strong>Settings, lock history</strong> (time, reason and signal strength of each lock, up to 200 entries) <strong>and a diagnostics log</strong> (events such as locks, trusted-place changes and the names of devices you paired), stored in your user Library. You can export or clear them in Settings → Diagnostics.</li>
+  <li><strong>License status</strong> and, only if you turn on the optional managed-password unlock, your login password are stored in the macOS Keychain.</li>
+  <li><strong>Location</strong> is optional. If you allow Location Services, Nearvale reads the Wi-Fi network name and, only if you save a location-based trusted place, compares your current position with it. Positions are compared on your Mac and never uploaded.</li>
+</ul>
+
+<h2>Network connections the app makes</h2>
+<ol>
+  <li><strong>License activation and checks</strong> (paid version only). When you activate, about every 7 days afterwards, and when you deactivate, the app sends your license key and a random device label (for example "Mac-1A2B3C") to Dodo Payments over HTTPS. It does not send your computer name or any usage data.</li>
+  <li><strong>Check for Updates</strong>, only when you click it: one request to GitHub to read the latest version number. Nothing about your Mac is sent.</li>
+  <li><strong>Map tiles</strong>, only while the "Choose on Map" window is open: Apple Maps loads the tiles for the area shown. The place you pick is not sent.</li>
+</ol>
+<p>Like any internet request, these connections reveal your IP address to the service you connect to (Dodo Payments, GitHub or Apple), under that service's own privacy policy.</p>
+
+<h2>When you buy</h2>
+<p>Purchases are processed by Dodo Payments, the merchant of record. Dodo Payments collects your name, email address, billing country and payment details to process the payment, calculate tax, prevent fraud and send your license key, under the <a href="https://dodopayments.com/privacy-policy">Dodo Payments privacy policy</a>. We receive order information such as your email address, country, amount and license key so that we can provide the license, refunds and support. We do not receive your full card details.</p>
+
+<h2>This website</h2>
+<p>This website is a static site hosted on GitHub Pages. It uses no cookies, no analytics and no third-party scripts. GitHub may keep standard server logs, such as IP addresses, under the <a href="https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement">GitHub Privacy Statement</a>. After a purchase, Dodo Payments may send you back to our thank-you page with your license key in the address; the page shows the key to you, removes it from the address bar and does not send it anywhere.</p>
+
+<h2>Email</h2>
+<p>If you email us at <a href="mailto:support@nearvale.app">support@nearvale.app</a>, we use your message and address only to reply and help you. If you attach a diagnostics log, it is already redacted by the app.</p>
+
+<h2>Retention and your rights</h2>
+<p>We keep order records for as long as needed to provide your license and as required by tax and accounting rules, and support emails for as long as needed to help you. You can ask us at any time to access, correct or delete the personal data we hold about you; some order records may have to be kept where the law requires it. Data on your Mac is under your control: deleting the app and its data removes it.</p>
+
+<h2>Children</h2>
+<p>Nearvale is not directed at children under 14, and we do not knowingly collect their personal data.</p>
+
+<h2>Changes</h2>
+<p>If this policy changes, we will update the date above. Material changes, such as a new kind of network connection, will also be described in the release notes of the version that introduces them.</p>
+
+<h2>Contact</h2>
+<p><a href="mailto:support@nearvale.app">support@nearvale.app</a></p>
+</article>
+
+</main>
+<footer class="site-footer">
+  <div class="site-footer__inner">
+    <nav class="site-footer__links" aria-label="Legal"><a href="terms.html">License Agreement</a><a href="privacy.html">Privacy</a><a href="refund.html">Refunds</a><a href="mailto:support@nearvale.app">Contact</a></nav>
+    <p>Payments are processed by Dodo Payments, our merchant of record.</p>
+    <p>Apple, Mac and Apple Watch are trademarks of Apple Inc. Nearvale is not affiliated with Apple.</p>
+    <p>© 2026 Nearvale</p>
+  </div>
+</footer>
+</body>
+</html>
