@@ -44,7 +44,7 @@
   <p class="hero__lead">Nearvale measures the Bluetooth distance between your Apple Watch and your Mac. Leave your desk and the screen locks; come back and it wakes up, ready for “Unlock with Apple Watch”.</p>
   <div class="actions">
     <a class="btn btn--primary" href="https://github.com/MaelWeb/nearvale-releases/releases/latest">Download the free trial</a>
-    <a class="btn btn--secondary" href="#pricing">Buy for $9.99</a>
+    <a class="btn btn--secondary" href="#pricing">From $5.99/year</a>
   </div>
   <p class="hero__meta">macOS 14 or later · Lives in the menu bar · No network by default · Never touches your password</p>
 </section>
@@ -79,7 +79,7 @@
     <p class="section__lead">For a tool that sits next to your work all day, privacy comes first.</p>
     <ul class="checks">
       <li>Everything is computed on your Mac. The trial makes no network requests at all.</li>
-      <li>After you buy, the app contacts Dodo Payments only to activate, to re-check your key about every 7 days, and to deactivate — sending the key and a random device label, never your computer name.</li>
+      <li>After you buy, the app contacts Dodo Payments only to activate, to re-check your key about every 7 days (about every 6 hours while a license is reported invalid, so it resumes on its own after renewal), and to deactivate — sending the key and a random device label, never your computer name.</li>
       <li>No analytics, no tracking, no crash reporting. Your password is never stored or sent.</li>
       <li>Location is optional and only compared on your Mac.</li>
     </ul>
@@ -88,20 +88,36 @@
 </section>
 
 <section class="section" id="pricing">
-  <h2 class="section__title--center">Pay once. Use it for good.</h2>
-  <div class="price-card">
-    <span class="price-card__badge">Early-bird price</span>
-    <p class="price-card__amount">$9.99<s class="price-card__was">$14.99</s></p>
-    <p class="price-card__note">One-time purchase · USD · taxes calculated at checkout</p>
-    <ul class="checks">
-      <li>14-day free trial with every feature</li>
-      <li>Use on up to 3 Macs at a time; move it with “Deactivate This Mac”</li>
-      <li>All future updates included</li>
-      <li>Full refund within 14 days, no questions asked</li>
-    </ul>
-    <span class="btn btn--disabled" aria-disabled="true">Purchase opens soon</span>
-    <p class="price-card__fine">Your license key arrives by email. Open Nearvale → Settings → License, paste it and click Activate. By buying you agree to the <a href="terms.html">License Agreement</a> and the <a href="refund.html">refund policy</a>.</p>
+  <h2 class="section__title--center">Yearly or once. Your choice.</h2>
+  <p class="pricing__lead">Either way, try the full app free for 14 days first, no card needed. Prices in USD; taxes are calculated at checkout.</p>
+  <div class="price-grid">
+    <div class="price-card">
+      <span class="price-card__badge">Early-bird price</span>
+      <h3 class="price-card__plan">Lifetime</h3>
+      <p class="price-card__amount">$9.99<s class="price-card__was">$14.99</s></p>
+      <p class="price-card__note">Pay once, use it for good</p>
+      <ul class="checks">
+        <li>Use on up to 3 Macs at a time; move it with “Deactivate This Mac”</li>
+        <li>All future updates included</li>
+        <li>Full refund within 14 days, no questions asked</li>
+      </ul>
+      <a class="btn btn--primary" href="https://checkout.dodopayments.com/buy/pdt_0NsHEbGOZ3ZdhHYW1bqCz?quantity=1&amp;redirect_url=https%3A%2F%2Fnearvale.app%2Fthanks.html">Buy Lifetime</a>
+    </div>
+    <div class="price-card">
+      <span class="price-card__badge price-card__badge--quiet">7 more free days at checkout</span>
+      <h3 class="price-card__plan">Annual</h3>
+      <p class="price-card__amount">$5.99<span class="price-card__period">/year</span></p>
+      <p class="price-card__note">Renews every year, cancel anytime</p>
+      <ul class="checks">
+        <li>A payment method is required at checkout; the first charge comes after 7 days, and cancelling before then costs nothing</li>
+        <li>Use on up to 3 Macs at a time; all updates included while subscribed</li>
+        <li>Cancel, change your card or see your renewal date in the <a href="https://customer.dodopayments.com/login/bus_0NsGztARVTKrTQzP86LXi">customer portal</a></li>
+        <li>Full refund within 14 days of the first charge and of each renewal</li>
+      </ul>
+      <a class="btn btn--secondary" href="https://checkout.dodopayments.com/buy/pdt_0NsdkvYOimzjL3AWDvNRY?quantity=1&amp;redirect_url=https%3A%2F%2Fnearvale.app%2Fthanks.html">Subscribe</a>
+    </div>
   </div>
+  <p class="price-card__fine pricing__fine">Your license key arrives by email. Open Nearvale → Settings → License, paste it and click Activate. To switch from the subscription to lifetime later, buy lifetime and use “Change License Key”, then cancel the subscription in the customer portal. By buying you agree to the <a href="terms.html">License Agreement</a> and the <a href="refund.html">refund policy</a>.</p>
 </section>
 
 <section class="section section--alt">
@@ -116,6 +132,10 @@
       <dd>No — it is a convenience tool. Bluetooth can be blocked or lost, so keep a strong password and FileVault on, and lock manually when it matters.</dd>
       <dt>What happens when the trial ends?</dt>
       <dd>Automatic locking stops and the app tells you so clearly. Your settings are kept; enter a license key and everything resumes.</dd>
+      <dt>What is the difference between the subscription and lifetime?</dt>
+      <dd>None in features; both work on up to 3 Macs at a time. Lifetime is a single payment. The annual subscription renews each year; if you cancel, automatic locking stops when the paid year ends. If a subscription ends, a renewal fails or a purchase is refunded, the app tells you clearly and stops auto-locking, and it resumes on its own once the renewal is paid.</dd>
+      <dt>How do I cancel a subscription?</dt>
+      <dd>Open the <a href="https://customer.dodopayments.com/login/bus_0NsGztARVTKrTQzP86LXi">customer portal</a>, enter the email you bought with, and sign in from the link we email you. There you can cancel, change your card or see your renewal date. Settings → License in the app also has a “Manage Subscription…” button.</dd>
       <dt>Can I move to a new Mac?</dt>
       <dd>Yes. Choose “Deactivate This Mac” in Settings → License, then activate on the new one. You can use up to 3 Macs at the same time.</dd>
       <dt>How do I get help?</dt>

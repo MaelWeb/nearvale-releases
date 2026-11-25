@@ -105,6 +105,15 @@ a:focus-visible, .btn:focus-visible { outline: 3px solid var(--brand-end); outli
 .price-card__note { color: var(--ink-mute); margin: 0 0 var(--space-lg); }
 .price-card .checks { text-align: left; margin: var(--space-lg) 0; }
 .price-card__fine { color: var(--ink-mute); font-size: 14px; margin-top: var(--space-md); }
+/* 两种方案并排；窄屏自动叠成一列 */
+.pricing__lead { max-width: 640px; margin: 0 auto var(--space-lg); text-align: center; color: var(--ink-mute); }
+.price-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: var(--space-lg); max-width: 880px; margin: 0 auto; }
+.price-grid .price-card { max-width: none; margin: 0; display: flex; flex-direction: column; align-items: center; }
+.price-grid .price-card .checks { flex: 1; align-self: stretch; }
+.price-card__plan { margin: var(--space-md) 0 0; font-size: 20px; }
+.price-card__period { font-size: 20px; font-weight: 500; color: var(--ink-mute); margin-left: 2px; }
+.price-card__badge--quiet { color: var(--ink-mute); border-color: var(--line); }
+.pricing__fine { max-width: 880px; margin: var(--space-lg) auto 0; text-align: center; }
 
 /* 问答 */
 .faq dt { font-weight: 600; margin-top: var(--space-lg); }
@@ -123,6 +132,8 @@ a:focus-visible, .btn:focus-visible { outline: 3px solid var(--brand-end); outli
 .prose table { border-collapse: collapse; width: 100%; font-size: 15px; }
 .prose th, .prose td { text-align: left; padding: var(--space-sm) var(--space-md); border-bottom: 1px solid var(--line); vertical-align: top; }
 .prose .updated { color: var(--ink-mute); font-size: 14px; }
+/* 帮助截图是 2 倍图（约 980px 宽）：按一半宽度显示才清晰，窄屏时随容器缩小。 */
+.prose img { display: block; width: 490px; max-width: 100%; height: auto; margin: var(--space-sm) 0; border-radius: var(--radius-sm); }
 
 /* 感谢页 */
 .key-box { display: flex; gap: var(--space-sm); align-items: stretch; margin: var(--space-md) 0; }

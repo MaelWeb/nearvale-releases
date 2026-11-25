@@ -1,4 +1,4 @@
-// 付款完成后 Dodo 会跳回本页，并在网址上附带 status、license_key（可能多把，逗号分隔）、email、payment_id 等参数。
+// 付款完成后 Dodo 会跳回本页，并在网址上附带 status、license_key（可能多把，逗号分隔）、email、payment_id（订阅为 subscription_id）等参数。
 // 这里只在本机读取并展示，随即把整个查询串从地址栏与浏览历史里抹掉，避免密钥与邮箱留在历史记录或被分享出去；不向任何地方发送。
 // 本页只是展示，不代表付款成功：真正的凭据是邮件里的密钥，应用激活时由 Dodo 校验。
 (function () {

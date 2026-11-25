@@ -44,7 +44,7 @@
   <p class="hero__lead">Nearvale 用 Apple Watch 与 Mac 之间的蓝牙距离，替你完成「离开工位就锁屏」这件总被忘记的事；回来时自动点亮屏幕，交给系统的「使用 Apple Watch 解锁」。</p>
   <div class="actions">
     <a class="btn btn--primary" href="https://github.com/MaelWeb/nearvale-releases/releases/latest">下载免费试用</a>
-    <a class="btn btn--secondary" href="#pricing">$9.99 购买</a>
+    <a class="btn btn--secondary" href="#pricing">每年 $5.99 起</a>
   </div>
   <p class="hero__meta">macOS 14 及以上 · 菜单栏常驻 · 默认不联网 · 不接触你的密码</p>
   <img class="hero__shot" src="../assets/menubar-zh.png" alt="Nearvale 菜单栏面板的四种状态" width="1760" height="454">
@@ -80,7 +80,7 @@
     <p class="section__lead">一个整天守在你工位旁的工具，隐私必须放在第一位。</p>
     <ul class="checks">
       <li>全部计算在你的 Mac 上完成，试用期间完全不联网。</li>
-      <li>购买后，应用只在激活、约每 7 天校验一次以及停用时联系 Dodo Payments，发送许可证密钥和一个随机设备标签，从不发送电脑名称。</li>
+      <li>购买后，应用只在激活、约每 7 天校验一次以及停用时联系 Dodo Payments（许可证失效期间约每 6 小时复查一次，以便续费后自动恢复），发送许可证密钥和一个随机设备标签，从不发送电脑名称。</li>
       <li>没有埋点、没有追踪、没有崩溃上报；从不存储或传输你的密码。</li>
       <li>定位是可选的，只在本机比对。</li>
     </ul>
@@ -89,20 +89,36 @@
 </section>
 
 <section class="section" id="pricing">
-  <h2 class="section__title--center">一次购买，终身使用</h2>
-  <div class="price-card">
-    <span class="price-card__badge">早鸟价</span>
-    <p class="price-card__amount">$9.99<s class="price-card__was">$14.99</s></p>
-    <p class="price-card__note">一次性买断 · 美元计价 · 税费在结账时计算</p>
-    <ul class="checks">
-      <li>14 天免费试用，功能完整</li>
-      <li>最多同时在 3 台 Mac 上使用，换机前点「停用这台 Mac」即可</li>
-      <li>以后所有版本的更新都包含在内</li>
-      <li>购买后 14 天内无理由全额退款</li>
-    </ul>
-    <span class="btn btn--disabled" aria-disabled="true">即将开放购买</span>
-    <p class="price-card__fine">许可证密钥会发到你的邮箱。打开 Nearvale → 设置 → 授权，粘贴密钥并点「激活」。购买即表示你同意<a href="terms.html">许可协议</a>与<a href="refund.html">退款政策</a>。</p>
+  <h2 class="section__title--center">年付或买断，任选其一</h2>
+  <p class="pricing__lead">两种方式都可以先在应用里免费试用 14 天，不用绑卡。美元计价，税费在结账时计算。</p>
+  <div class="price-grid">
+    <div class="price-card">
+      <span class="price-card__badge">早鸟价</span>
+      <h3 class="price-card__plan">终身买断</h3>
+      <p class="price-card__amount">$9.99<s class="price-card__was">$14.99</s></p>
+      <p class="price-card__note">一次付款，永久使用</p>
+      <ul class="checks">
+        <li>最多同时在 3 台 Mac 上使用，换机前点「停用这台 Mac」即可</li>
+        <li>以后所有版本的更新都包含在内</li>
+        <li>购买后 14 天内无理由全额退款</li>
+      </ul>
+      <a class="btn btn--primary" href="https://checkout.dodopayments.com/buy/pdt_0NsHEbGOZ3ZdhHYW1bqCz?quantity=1&amp;redirect_url=https%3A%2F%2Fnearvale.app%2Fthanks.html">买断 Nearvale</a>
+    </div>
+    <div class="price-card">
+      <span class="price-card__badge price-card__badge--quiet">结账后再试用 7 天</span>
+      <h3 class="price-card__plan">年度订阅</h3>
+      <p class="price-card__amount">$5.99<span class="price-card__period">/年</span></p>
+      <p class="price-card__note">每年自动续费，可随时取消</p>
+      <ul class="checks">
+        <li>结账时需绑定付款方式，7 天后才首次扣款，期间取消不收费</li>
+        <li>最多同时在 3 台 Mac 上使用；订阅期内所有更新都包含在内</li>
+        <li>在<a href="https://customer.dodopayments.com/login/bus_0NsGztARVTKrTQzP86LXi">客户门户</a>随时取消、换卡或查看续费日期</li>
+        <li>首次扣款与每次续费后 14 天内可申请全额退款</li>
+      </ul>
+      <a class="btn btn--secondary" href="https://checkout.dodopayments.com/buy/pdt_0NsdkvYOimzjL3AWDvNRY?quantity=1&amp;redirect_url=https%3A%2F%2Fnearvale.app%2Fthanks.html">订阅 Nearvale</a>
+    </div>
   </div>
+  <p class="price-card__fine pricing__fine">许可证密钥会发到你的邮箱。打开 Nearvale → 设置 → 授权，粘贴密钥并点「激活」。之后想从订阅改为买断，买断后在授权页「更换密钥」即可，并记得在客户门户取消订阅。购买即表示你同意<a href="terms.html">许可协议</a>与<a href="refund.html">退款政策</a>。</p>
 </section>
 
 <section class="section section--alt">
@@ -117,6 +133,10 @@
       <dd>不是，它是便利工具。蓝牙信号可能被遮挡或丢失，请保留强密码并开启 FileVault，重要场合手动锁屏。</dd>
       <dt>试用结束后会怎样？</dt>
       <dd>自动锁定会停止，应用会明确告诉你这一点。你的设置都会保留，输入许可证密钥后立即恢复。</dd>
+      <dt>订阅和买断有什么区别？</dt>
+      <dd>功能完全一样，都能同时在 3 台 Mac 上使用。买断一次付款、永久使用；年度订阅每年续费，取消后到期停止自动锁定。订阅到期、续费失败或退款后，应用会明确提示并停止自动锁定，补缴成功会自动恢复。</dd>
+      <dt>怎么取消订阅？</dt>
+      <dd>打开<a href="https://customer.dodopayments.com/login/bus_0NsGztARVTKrTQzP86LXi">客户门户</a>，输入购买时的邮箱，用邮件里的链接登录后即可取消、换卡或查看续费日期；应用的「设置 → 授权」里也有「管理订阅…」按钮。</dd>
       <dt>换了新 Mac 怎么办？</dt>
       <dd>在「设置 → 授权」点「停用这台 Mac」，再到新电脑上激活。最多可同时在 3 台 Mac 上使用。</dd>
       <dt>遇到问题怎么办？</dt>
