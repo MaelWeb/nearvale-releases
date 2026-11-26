@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- 纯静态站：只允许加载本站资源，禁止内联脚本；感谢页的脚本放在 assets/thanks.js -->
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self'; script-src 'self'; base-uri 'none'; form-action 'none'">
+<meta name="referrer" content="no-referrer">
+<title>Apple Watch 离开时自动锁定 Mac：系统自带方法与更省心的做法 · Nearvale</title>
+<meta name="description" content="macOS 能用 Apple Watch 解锁，却不会在你走开时自动锁屏。这里讲清系统自带的几种办法、它们的不足，以及按蓝牙距离自动锁屏的做法。">
+<link rel="canonical" href="https://nearvale.app/zh/lock-mac-with-apple-watch.html">
+<link rel="alternate" hreflang="en" href="https://nearvale.app/lock-mac-with-apple-watch.html">
+<link rel="alternate" hreflang="zh-Hans" href="https://nearvale.app/zh/lock-mac-with-apple-watch.html">
+<link rel="alternate" hreflang="x-default" href="https://nearvale.app/lock-mac-with-apple-watch.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Nearvale">
+<meta property="og:title" content="Apple Watch 离开时自动锁定 Mac：系统自带方法与更省心的做法 · Nearvale">
+<meta property="og:description" content="macOS 能用 Apple Watch 解锁，却不会在你走开时自动锁屏。这里讲清系统自带的几种办法、它们的不足，以及按蓝牙距离自动锁屏的做法。">
+<meta property="og:url" content="https://nearvale.app/zh/lock-mac-with-apple-watch.html">
+<meta property="og:image" content="https://nearvale.app/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Nearvale — Walk away. Your Mac locks itself.">
+<meta property="og:locale" content="zh_CN">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Apple Watch 离开时自动锁定 Mac：系统自带方法与更省心的做法 · Nearvale">
+<meta name="twitter:description" content="macOS 能用 Apple Watch 解锁，却不会在你走开时自动锁屏。这里讲清系统自带的几种办法、它们的不足，以及按蓝牙距离自动锁屏的做法。">
+<meta name="twitter:image" content="https://nearvale.app/assets/og.png">
+<link rel="icon" type="image/png" href="../assets/icon.png">
+<link rel="stylesheet" href="../assets/style.css?v=d2fd399f">
+</head>
+<body>
+<a class="skip" href="#main">跳到正文</a>
+<header class="site-header">
+  <div class="site-header__inner">
+    <a class="brand" href="index.html"><img src="../assets/icon.png" alt="" width="28" height="28"><span>Nearvale</span></a>
+    <nav class="nav" aria-label="Main"><a href="index.html#features">功能</a><a href="index.html#pricing">价格</a><a href="help.html">帮助</a><a class="nav__cta" href="https://github.com/MaelWeb/nearvale-releases/releases/latest/download/Nearvale.dmg">下载</a><a class="nav__lang" href="../lock-mac-with-apple-watch.html" hreflang="en">English</a></nav>
+  </div>
+</header>
+<main id="main">
+<article class="prose">
+<h1>Apple Watch 离开时自动锁定 Mac：系统自带方法与更省心的做法</h1>
+<p class="updated">最后更新：2026-11-26</p>
+
+<p>先说结论：macOS 能在 Apple Watch 靠近时<em>解锁</em> Mac，但没有「手表走远就<em>锁定</em>」的设置。系统自带几种快速锁屏的办法，另有一类按蓝牙距离自动锁屏的应用。这一页把两边都讲清楚，方便你按需要选。</p>
+
+<h2>macOS 自带的办法</h2>
+<ul>
+  <li><strong>手动锁屏。</strong>按 <kbd>⌃</kbd><kbd>⌘</kbd><kbd>Q</kbd>，或在苹果菜单里选「锁定屏幕」。立刻生效，但得你自己记得去按。</li>
+  <li><strong>触发角。</strong>系统设置 → 桌面与程序坞 → 触发角，可以把某个角设为「锁定屏幕」，鼠标甩到那个角就锁。</li>
+  <li><strong>闲置后锁定。</strong>系统设置 → 锁定屏幕，把屏幕保护程序或显示器睡眠设为较短时间，并要求之后立刻输入密码。它是「停止操作一段时间后」才锁，不是「你走开时」锁。</li>
+  <li><strong>用 Apple Watch 解锁。</strong>系统设置 → 触控 ID 与密码，可以让附近已解锁的 Apple Watch 解锁 Mac。它只负责解锁，从不锁定。</li>
+</ul>
+
+<h2>为什么闲置计时不够用</h2>
+<p>闲置计时要等到时间用完才起作用。设成一分钟，你走开后屏幕最多还会亮一分钟；设得太短，你看文档、看视频时又会被锁出去。多数人最后会选一个较长的时间，结果就是：你起身去接水、接电话、和同事聊两句的那一刻，Mac 恰好是开着的。</p>
+
+<h2>按距离自动锁定</h2>
+<p>按距离锁屏的应用会监听你随身设备（比如 Apple Watch）的蓝牙信号，信号变弱就锁定 Mac。有两点要知道：</p>
+<ul>
+  <li><strong>量的是信号强度，不是米数。</strong>墙壁、身体和手表的戴法都会改变读数，所以好用的应用要能按你的工位校准，也要能在误锁时让你告诉它。</li>
+  <li><strong>它是便利功能，不是安全防线。</strong>蓝牙可能被屏蔽，手表也可能丢，所以请保持强密码并开启 FileVault，重要时刻还是手动锁屏。</li>
+</ul>
+
+<h2>用 Nearvale 来做</h2>
+<p>Nearvale 是一款 macOS 菜单栏应用，就为这件事而做：Apple Watch 走远，Mac 自动锁屏；回来时屏幕自动点亮，交给系统的「使用 Apple Watch 解锁」。手表上不用装任何东西。</p>
+<ol>
+  <li><strong>安装并打开 Nearvale。</strong>它出现在菜单栏，并引导你授予蓝牙权限。</li>
+  <li><strong>选择你的 Apple Watch。</strong>在设置里从附近设备列表中选中你的手表。</li>
+  <li><strong>校准。</strong>像平时那样坐好，运行一次校准向导，它会按你的房间和 Mac 生成距离阈值。</li>
+  <li><strong>在 macOS 系统设置里打开「使用 Apple Watch 解锁」，</strong>这样回来时不光点亮屏幕，也能解锁。</li>
+</ol>
+<p>再用上这些不碍事的功能：信任场所（家里或办公室）里自动暂停；会议或演示期间有应用阻止显示器睡眠时暂缓；一键标记「这次是误锁」让它自己调整。14 天试用期间完全不联网，也不做任何统计。</p>
+
+<p><a class="btn btn--primary" href="https://github.com/MaelWeb/nearvale-releases/releases/latest/download/Nearvale.dmg">下载免费试用</a> &nbsp; <a href="index.html#pricing">查看价格</a> · <a href="compare.html">与 ProximityLock、Unlock 对比</a> · <a href="help.html">阅读帮助手册</a></p>
+</article>
+
+</main>
+<footer class="site-footer">
+  <div class="site-footer__inner">
+    <nav class="site-footer__links" aria-label="Legal"><a href="terms.html">许可协议</a><a href="privacy.html">隐私政策</a><a href="refund.html">退款政策</a><a href="lock-mac-with-apple-watch.html">自动锁屏指南</a><a href="compare.html">对比</a><a href="mailto:support@nearvale.app">联系我们</a></nav>
+    <p>付款由记录商户 Dodo Payments 处理。</p>
+    <p>Apple、Mac 与 Apple Watch 是 Apple Inc. 的商标，Nearvale 与 Apple 无关联。</p>
+    <p>© 2026 Nearvale</p>
+  </div>
+</footer>
+</body>
+</html>

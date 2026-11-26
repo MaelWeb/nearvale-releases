@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- 纯静态站：只允许加载本站资源，禁止内联脚本；感谢页的脚本放在 assets/thanks.js -->
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self'; script-src 'self'; base-uri 'none'; form-action 'none'">
+<meta name="referrer" content="no-referrer">
+<title>How to lock your Mac automatically when you walk away with your Apple Watch · Nearvale</title>
+<meta name="description" content="macOS can unlock with your Apple Watch but does not lock when you leave. Here are the built-in options, why they fall short, and how a proximity lock fills the gap.">
+<link rel="canonical" href="https://nearvale.app/lock-mac-with-apple-watch.html">
+<link rel="alternate" hreflang="en" href="https://nearvale.app/lock-mac-with-apple-watch.html">
+<link rel="alternate" hreflang="zh-Hans" href="https://nearvale.app/zh/lock-mac-with-apple-watch.html">
+<link rel="alternate" hreflang="x-default" href="https://nearvale.app/lock-mac-with-apple-watch.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Nearvale">
+<meta property="og:title" content="How to lock your Mac automatically when you walk away with your Apple Watch · Nearvale">
+<meta property="og:description" content="macOS can unlock with your Apple Watch but does not lock when you leave. Here are the built-in options, why they fall short, and how a proximity lock fills the gap.">
+<meta property="og:url" content="https://nearvale.app/lock-mac-with-apple-watch.html">
+<meta property="og:image" content="https://nearvale.app/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Nearvale — Walk away. Your Mac locks itself.">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="How to lock your Mac automatically when you walk away with your Apple Watch · Nearvale">
+<meta name="twitter:description" content="macOS can unlock with your Apple Watch but does not lock when you leave. Here are the built-in options, why they fall short, and how a proximity lock fills the gap.">
+<meta name="twitter:image" content="https://nearvale.app/assets/og.png">
+<link rel="icon" type="image/png" href="assets/icon.png">
+<link rel="stylesheet" href="assets/style.css?v=d2fd399f">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="site-header__inner">
+    <a class="brand" href="index.html"><img src="assets/icon.png" alt="" width="28" height="28"><span>Nearvale</span></a>
+    <nav class="nav" aria-label="Main"><a href="index.html#features">Features</a><a href="index.html#pricing">Pricing</a><a href="help.html">Help</a><a class="nav__cta" href="https://github.com/MaelWeb/nearvale-releases/releases/latest/download/Nearvale.dmg">Download</a><a class="nav__lang" href="zh/lock-mac-with-apple-watch.html" hreflang="zh-Hans">中文</a></nav>
+  </div>
+</header>
+<main id="main">
+<article class="prose">
+<h1>How to lock your Mac automatically when you walk away with your Apple Watch</h1>
+<p class="updated">Last updated: 2026-11-26</p>
+
+<p>The short answer: macOS can <em>unlock</em> your Mac when your Apple Watch is nearby, but it has no setting that <em>locks</em> the Mac when the watch walks away. There are a few built-in ways to lock quickly, and a small class of apps that lock based on Bluetooth distance. This page explains both so you can pick what fits.</p>
+
+<h2>What macOS already gives you</h2>
+<ul>
+  <li><strong>Lock on demand.</strong> Press <kbd>⌃</kbd><kbd>⌘</kbd><kbd>Q</kbd>, or choose Lock Screen from the Apple menu. It is instant, but you have to remember to do it.</li>
+  <li><strong>A hot corner.</strong> In System Settings → Desktop &amp; Dock → Hot Corners, you can set a corner to Lock Screen, so flicking the pointer there locks the Mac.</li>
+  <li><strong>Lock after idle.</strong> In System Settings → Lock Screen, set the screen saver or display sleep to start after a short time and require the password immediately afterwards. This locks after you stop touching the Mac, not when you leave.</li>
+  <li><strong>Unlock with Apple Watch.</strong> In System Settings → Touch ID &amp; Password you can let a nearby, unlocked Apple Watch unlock your Mac. It only unlocks. It never locks.</li>
+</ul>
+
+<h2>Why idle timers are not enough</h2>
+<p>An idle timer protects you only after it runs out. If you set it to one minute, your screen is still readable for up to a minute after you leave, and a short timer also locks you out while you read or watch something. Most people end up choosing a long timer, which means the Mac is open exactly when you walk away to grab coffee, take a call or talk to a colleague.</p>
+
+<h2>Locking by distance</h2>
+<p>A proximity lock watches the Bluetooth signal of a device you carry, such as your Apple Watch, and locks the Mac when the signal gets weak. Two things are worth knowing:</p>
+<ul>
+  <li><strong>It measures signal strength, not metres.</strong> Walls, your body and the way you hold the watch all change the reading, so a good app lets you calibrate it to your desk and lets you tell it when it locked by mistake.</li>
+  <li><strong>It is a convenience, not a security boundary.</strong> Bluetooth can be blocked or the watch can be lost, so keep a strong password and FileVault on, and lock manually when it matters.</li>
+</ul>
+
+<h2>Doing it with Nearvale</h2>
+<p>Nearvale is a macOS menu-bar app built for exactly this: when your Apple Watch moves away, your Mac locks; when you come back, the display wakes, ready for macOS “Unlock with Apple Watch”. You do not need to install anything on the watch.</p>
+<ol>
+  <li><strong>Install and open Nearvale.</strong> It appears in the menu bar and walks you through the Bluetooth permission.</li>
+  <li><strong>Pick your Apple Watch.</strong> In Settings, choose your watch from the list of nearby devices.</li>
+  <li><strong>Calibrate.</strong> Run the calibration wizard once, sitting as you normally do. It sets the distance thresholds for your room and your Mac.</li>
+  <li><strong>Turn on “Unlock with Apple Watch”</strong> in macOS System Settings, so coming back unlocks as well as wakes.</li>
+</ol>
+<p>Then use the tools that stop it from getting in your way: trusted places (home or office) where it pauses, a pause while an app keeps the display awake for a call or a presentation, and a one-tap “this was a false lock” that makes it adjust. It makes no network requests during the 14-day trial and does not collect analytics.</p>
+
+<p><a class="btn btn--primary" href="https://github.com/MaelWeb/nearvale-releases/releases/latest/download/Nearvale.dmg">Download the free trial</a> &nbsp; <a href="index.html#pricing">See pricing</a> · <a href="compare.html">Compare with ProximityLock and Unlock</a> · <a href="help.html">Read the help guide</a></p>
+</article>
+
+</main>
+<footer class="site-footer">
+  <div class="site-footer__inner">
+    <nav class="site-footer__links" aria-label="Legal"><a href="terms.html">License Agreement</a><a href="privacy.html">Privacy</a><a href="refund.html">Refunds</a><a href="lock-mac-with-apple-watch.html">Auto-lock guide</a><a href="compare.html">Compare</a><a href="mailto:support@nearvale.app">Contact</a></nav>
+    <p>Payments are processed by Dodo Payments, our merchant of record.</p>
+    <p>Apple, Mac and Apple Watch are trademarks of Apple Inc. Nearvale is not affiliated with Apple.</p>
+    <p>© 2026 Nearvale</p>
+  </div>
+</footer>
+</body>
+</html>
